@@ -1,18 +1,15 @@
 import java.util.Scanner;
 import java.time.LocalDate;
 import java.time.Period;
-
 public class Main {
     public static void main(String[] args) throws Exception {
         System.out.println(calcularIdade());
     }
-
     public  static class Cadastro{
             String nome;
             int dia;
             int mes;
             int ano;
-
     }
     public static String calcularIdade(){
         Cadastro cadastrar = new Cadastro();
@@ -29,6 +26,6 @@ public class Main {
         LocalDate dataReferencia = LocalDate.of(2023, 3, 15);
         Period periodo = Period.between(dataNascimento, dataReferencia);
         int idade = periodo.getYears();
-        return cadastrar.nome + " tem " + idade + " anos." + "em 15/03/2023";
+        return cadastrar.nome + " tem " + idade + " anos " + "em 15/03/2023";
     }
 }

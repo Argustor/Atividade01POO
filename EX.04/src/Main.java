@@ -1,8 +1,6 @@
 import java.time.LocalDate;
 import java.time.Period;
-
 public class Main {
-    
     public static String calcularIdade(){
         Cadastro cadastro = new Cadastro();
         cadastro.nome = "Renato";
@@ -14,9 +12,7 @@ public class Main {
         Period periodo = Period.between(dataNascimento, dataReferencia);
         int idade = periodo.getYears();
         return cadastro.nome + ", " + idade + " anos";
-
     }
-
     public static void main(String[] args) throws Exception {
        System.out.println(calcularIdade());
     }

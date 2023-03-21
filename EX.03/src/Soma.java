@@ -3,9 +3,7 @@ public class Soma {
         int soma = 0;
         for (int i = 1; i <= numero; i++) {
             soma += i;
-
         }
         return soma;
     }
     }
-

@@ -2,7 +2,6 @@ public class Main {
     public static void main(String[] args) throws Exception {
         Disciplinas.imprimirDisciplinas();
     }
-
     public class Disciplinas{
         public static void imprimirDisciplinas(){
             System.out.println("Disciplinas do 2° ano de Engenharia de Software:");
